@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-app
-  namespace: technicalassessment-namespace  # Namespace actualizado
+  namespace: technicalassessment-namespace
   labels:
     app: my-app
 spec:
