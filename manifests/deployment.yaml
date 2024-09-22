@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: acrtechnicalassessmentprod.azurecr.io/microservice:54
+        image: acrtechnicalassessmentprod.azurecr.io/microservice:55
         ports:
         - containerPort: 8000
         resources:
