@@ -9,7 +9,7 @@ spec:
     kind: Deployment
     name: my-app
   minReplicas: 2
-  maxReplicas: 5
+  maxReplicas: 6
   metrics:
   - type: Resource
     resource:
@@ -19,16 +19,16 @@ spec:
         averageUtilization: 10
   behavior:
     scaleUp:
-      stabilizationWindowSeconds: 120
+      stabilizationWindowSeconds: 60
       selectPolicy: Max
       policies:
       - type: Pods
         value: 2
-        periodSeconds: 60
+        periodSeconds: 30
     scaleDown:
       stabilizationWindowSeconds: 300
       selectPolicy: Max
       policies:
       - type: Pods
         value: 1
-        periodSeconds: 60
+        periodSeconds: 120
